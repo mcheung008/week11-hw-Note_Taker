@@ -20,7 +20,7 @@ Application should allow users to view previously saved notes.
 
 Application should allow users to delete previously saved notes.
 
-### Usage
+### Usage/Instructions
 
 Page the user sees when first visiting the website.
 ![Landing Page](./Develop/public/assets/screenshots/landing-page.png)
@@ -39,3 +39,5 @@ User can then view the notes by clicking on the note on the left pane.
 
 User can also delete a note by clicking on the trash icon on the right side of the note.
 ![Deleting Note](./Develop/public/assets/screenshots/delete-note.png)
+
+Happy Coding!
