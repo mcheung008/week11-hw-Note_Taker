@@ -1,13 +1,13 @@
 const fs = require("fs");
+const path = require("path");
 var data = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
 
 
 module.exports = function(app) {
 
     app.get("/api/notes", function(req, res) {
-       
-        res.json(data);
-
+        const notes = fs.readFileSync(path.join(__dirname,'../db/db.json'), 'utf8');
+        res.json(JSON.parse(notes));
     });
 
     app.get("/api/notes/:id", function(req, res) {

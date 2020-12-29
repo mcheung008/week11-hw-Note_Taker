@@ -3,6 +3,7 @@ const $noteText = $(".note-textarea");
 const $saveNoteBtn = $(".save-note");
 const $newNoteBtn = $(".new-note");
 const $noteList = $(".list-container .list-group");
+const notes = [];
 
 // activeNote is used to keep track of the note in the textarea
 let activeNote = {};
@@ -102,7 +103,7 @@ const handleRenderSaveBtn = function () {
 // Render's the list of note titles
 const renderNoteList = (notes) => {
   $noteList.empty();
-
+console.log('notes: ', notes);
   const noteListItems = [];
 
   // Returns jquery object for li with given text and delete button
